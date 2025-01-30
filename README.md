@@ -1,17 +1,5 @@
 # Automatic-Knee-Contour-Detection-Using-U-net-Segmentation
-U-net based BioMedical Image Segmentation approach for Knee X-rays to automate contour extraction on femur bone
-When working at [AlgoSurg](https://www.linkedin.com/company/algosurg/) I came across this interesting problem of automating contour extraction of knee-bones, these contours help drive surgeon's decision about the surgery, manually annotating takes lot of efforts and time for a fairly repetitive task thus neural networks come to rescue
-
-My solution is based on main U-net architecture but there are some fine changes that I implemented by getting insprired from the papers mentioned in references
-
-* I have used same filters model thus keeping filters=128 throughout the U-net
-* I have used Average Pooling instead of maxpooling
-
-Dataset is not included in the github as it is proprietary
-Thanks to AlgoSurg for letting me publish this code
-
-I first tried to solve this problem using landmark detection but I soon realised that the problem is more similar to edge detection and therefore I used segmentation type approach and optimized Binary Cross Entropy Loss
-I tried many different architectures such as Dilated Residual U-net, Stack U-net 
+This project uses U-Net to automate femur bone contour extraction in knee X-rays, aiding surgeons' decision-making. Manual annotation is time-consuming and repetitive, making deep learning a valuable solution. The model improves efficiency, accuracy, and consistency, reducing effort in surgical planning. This has been done using U-net based BioMedical Image Segmentation approach for Knee X-rays to automate contour extraction on femur bone
 
 ## References
 [Heatmap Regression 2016](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_27)<br>
